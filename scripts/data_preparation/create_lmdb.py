@@ -76,11 +76,11 @@ def create_lmdb_for_reds():
     img_path_list, keys = prepare_keys_reds(folder_path)
     make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys, multiprocessing_read=True)
 
-    # # train_sharp_bicubic
-    # folder_path = 'trainsets/REDS/train_sharp_bicubic'
-    # lmdb_path = 'trainsets/REDS/train_sharp_bicubic_with_val.lmdb'
-    # img_path_list, keys = prepare_keys_reds(folder_path)
-    # make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys, multiprocessing_read=True)
+    # train_sharp_bicubic
+    folder_path = '/content/drive/MyDrive/REDS_DATASET_DRIVE/train_sharp_bicubic/X4'
+    lmdb_path = '/content/RVRT/trainsets/REDS/train_sharp_bicubic_with_val.lmdb'
+    img_path_list, keys = prepare_keys_reds(folder_path)
+    make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys, multiprocessing_read=True)
     #
     # # train_blur (for video deblurring)
     # folder_path = 'trainsets/REDS_blur/train_blur'
