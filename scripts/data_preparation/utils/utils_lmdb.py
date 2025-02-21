@@ -13,7 +13,7 @@ def make_lmdb_from_imgs(data_path,
                         batch=5000,
                         compress_level=1,
                         multiprocessing_read=False,
-                        n_thread=40,
+                        n_thread=16,
                         map_size=None):
     """Make lmdb from images.
 
